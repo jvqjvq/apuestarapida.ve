@@ -1,0 +1,101 @@
+/* styles.css */
+
+body {
+    background-color: #222; /* Dark background for the entire body */
+    color: white; /* White text */
+    font-family: Arial, sans-serif; /* Font style */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url("retrato-blanco-negro-atleta-que-compite-juegos-campeonato-paralimpico.jpg");
+    background-position: center;
+    background-size: 80rem;
+}
+
+.container, .dashboard-container {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center align contents */
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    text-align: center; /* Center align headings */
+    color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    width: 300px; /* Fixed width for the form */
+    background-color: #444; /* Form background */
+    padding: 20px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+input {
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #555; /* Input background */
+    color: white; /* Input text color */
+}
+
+input::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+
+button {
+    padding: 10px; /* Padding for button */
+    background-color: rgb(243, 20, 20); /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    background-color: gray; /* Darker blue on hover */
+}
+
+#message, #betMessage {
+    margin-top: 10px; /* Space above message */
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center align message */
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    background-color: #333; /* Dark background for dashboard */
+    padding: 40px; /* Padding around the dashboard */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    opacity: 92%;
+    font-weight: bold;
+    
+}
+
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and title */
+}

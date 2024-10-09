@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APUESTA RÁPIDA</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="header">
+        <img src="LOGO APUESTA1.png" alt="Logo" class="logo" />
+    </div>
+    
+    <h3>Realiza tu apuesta aquí</h3>
+    <form id="betForm">
+        <label for="racecourse">hipódromo (escribe):</label>
+        <input type="text" id="racecourse" placeholder="Enter racecourse name" required>
+        
+        <label for="horseNumber">Número caballo(#):</label>
+        <input type="number" id="horseNumber" placeholder="Enter horse number" required min="1">
+        
+        <label for="betAmount">Monto en USD ($):</label>
+        <input type="number" id="betAmount" placeholder="Enter bet amount" required min="1">
+
+        <fieldset>
+            <legend>tipo de apuesta:</legend>
+            <label>
+                <input type="checkbox" name="betType" value="win">
+                Win
+            </label>
+            <label>
+                <input type="checkbox" name="betType" value="place">
+                Place
+            </label>
+        </fieldset>
+
+        <button type="submit">¡APUESTA!</button>
+    </form>
+    
+    <p id="betMessage"></p>
+    <button id="printButton" style="display:none;">Print Last Bet</button>
+    <a href="index.html">Logout</a>
+    <p></p>
+    <a href="bets.html">View All Bets</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
